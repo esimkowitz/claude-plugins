@@ -1,18 +1,19 @@
 # task-discovery
 
-Auto-discover Taskfile.yml tasks at session start.
+Auto-discover Taskfile.yml tasks at session start and after context compaction.
 
 ## Features
 
-A SessionStart hook that automatically discovers and displays available tasks from `Taskfile.yml` when you start a Claude Code session in a project that uses [Task](https://taskfile.dev).
+Hooks that automatically discover and display available tasks from `Taskfile.yml` when you start a Claude Code session (or after context compaction) in a project that uses [Task](https://taskfile.dev).
 
 - **Repository-aware**: Looks for `Taskfile.yml` at the git repository root, so it works even when starting Claude Code from a subdirectory
 - **Fallback behavior**: If not in a git repo, uses the current working directory
 - **Context-aware output**: Tells Claude where to run the tasks from (repository root or current directory)
+- **Compaction-resilient**: Re-injects task info before context compaction so it survives long conversations
 
 ## Usage
 
-Automatic - the hook runs at session start if:
+Automatic - the hooks run at session start and before context compaction if:
 1. The `task` command is installed (`brew install go-task`)
 2. A `Taskfile.yml` or `Taskfile.yaml` exists at the repo root (or current directory)
 
