@@ -11,13 +11,13 @@
     {
       "name": "save-plan",
       "description": "Save plan mode documents to repository for future reference",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "source": "./plugins/save-plan"
     },
     {
       "name": "task-discovery",
       "description": "Auto-discover Taskfile.yml tasks at session start",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "source": "./plugins/task-discovery"
     }
   ]

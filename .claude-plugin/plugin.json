@@ -1,0 +1,5 @@
+{
+  "name": "claude-plugins-marketplace",
+  "description": "Root marketplace plugin with versioning automation",
+  "version": "1.0.0"
+}

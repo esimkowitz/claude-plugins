@@ -1,0 +1,24 @@
+version: '3'
+
+vars:
+  REPO_ROOT:
+    sh: pwd
+
+tasks:
+  'bump:*:*':
+    desc: 'Bump plugin version: task bump:<plugin>:<major|minor|patch>'
+    vars:
+      PLUGIN: '{{index .MATCH 0}}'
+      TYPE: '{{index .MATCH 1}}'
+    cmd: |
+      bash {{.REPO_ROOT}}/scripts/version-plugin.sh {{.PLUGIN}} {{.TYPE}}
+
+  list-plugins:
+    desc: List available plugins
+    cmd: |
+      jq -r '.plugins[].name' .claude-plugin/marketplace.json
+
+  show-versions:
+    desc: Show all plugin versions
+    cmd: |
+      jq -r '.plugins[] | "\(.name): \(.version)"' .claude-plugin/marketplace.json
