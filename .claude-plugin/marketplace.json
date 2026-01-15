@@ -1,0 +1,11 @@
+{
+  "name": "esimkowitz-plugins",
+  "owner": {
+    "name": "Evan Simkowitz"
+  },
+  "metadata": {
+    "description": "Personal Claude Code plugins",
+    "version": "1.0.0"
+  },
+  "plugins": []
+}

@@ -1,0 +1,5 @@
+{
+  "name": "task-discovery",
+  "description": "Auto-discover Taskfile.yml tasks at session start",
+  "version": "1.0.0"
+}
