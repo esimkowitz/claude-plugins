@@ -1,5 +1,5 @@
 {
   "name": "task-discovery",
   "description": "Auto-discover Taskfile.yml tasks at session start and before context compacting",
-  "version": "1.0.3"
+  "version": "1.0.4"
 }
