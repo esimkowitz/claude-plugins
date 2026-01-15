@@ -17,7 +17,7 @@
     {
       "name": "task-discovery",
       "description": "Auto-discover Taskfile.yml tasks at session start",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "source": "./plugins/task-discovery"
     }
   ]
