@@ -19,10 +19,10 @@ Then install the plugins you want:
 
 ## Plugins
 
-| Plugin                                      | Description                                            |
-|---------------------------------------------|--------------------------------------------------------|
-| [save-plan](plugins/save-plan/)             | Save and find plan mode documents for future reference |
-| [task-discovery](plugins/task-discovery/)   | Auto-discover Taskfile.yml tasks at session start      |
+| Plugin                                    | Description                                                              |
+| ----------------------------------------- | ------------------------------------------------------------------------ |
+| [save-plan](plugins/save-plan/)           | Save and find plan mode documents for future reference                   |
+| [task-discovery](plugins/task-discovery/) | Auto-discover Taskfile.yml tasks at session start and context compaction |
 
 ## Adding New Plugins
 
