@@ -1,2 +1,4 @@
 # Version bump tracking (per-branch state)
 .claude-plugin/.version-bumps
+
+.aicontext/
