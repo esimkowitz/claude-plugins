@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eu
 
 # Save a plan file to .aicontext/ with a timestamped, descriptive name
 # Usage: save-plan.sh <descriptive-name> <plan-file-path>

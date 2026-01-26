@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eu
 
 # Search for plans matching a query in .aicontext/ directories
 # Usage: find-plans.sh [query]

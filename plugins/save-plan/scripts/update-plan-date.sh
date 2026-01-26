@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euo pipefail
+set -eu
 
 # Rename a plan file with the current date while preserving the descriptive name
 # Usage: update-plan-date.sh <plan-file-path>
